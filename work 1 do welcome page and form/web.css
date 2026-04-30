@@ -106,6 +106,22 @@ div {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1100px;
+  background: none;
+  box-shadow: none;
+  padding: 0 20px;
+}
+
+#main-content > div {
+  flex: 1;
+  margin: 40px 0;
 }
 
 h2 {
@@ -145,58 +161,42 @@ hr {
 form {
   width: 480px;
   margin: 40px auto;
-  padding: 0;
+  padding: 20px 40px 30px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(233,69,96,0.15);
-  border-top: 5px solid #0f3460;
-  overflow: hidden;
-}
-
-form h1 {
-  background: #e94560;
-  color: #fff;
-  margin: 0;
-  padding: 20px 40px;
-  font-size: 1.4rem;
-}
-
-form p {
-  padding: 0 40px;
-  margin-top: 16px;
-  color: #666;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
 label {
   font-weight: bold;
   font-size: 0.9rem;
-  color: #e94560;
+  color: #1a1a2e;
   display: block;
-  margin-top: 16px;
-  margin-bottom: 5px;
-  padding: 0 40px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 select,
 textarea {
-  width: calc(100% - 80px);
-  margin: 0 40px;
-  padding: 10px 12px;
-  border: 1px solid #f5a0ae;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
-  background: #fff5f6;
+  background: #f9f9f9;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="tel"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #e94560;
+  border-color: #0f3460;
   background: #fff;
 }
 
