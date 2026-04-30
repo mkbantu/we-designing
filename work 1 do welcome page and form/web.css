@@ -1,139 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  color: #222;
-  background: #f9f9f9;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #1a1a2e;
+  line-height: 1.7;
+}
+
+#reg {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0f3460;
+  padding: 6px 30px;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#reg ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}
+
+#reg li {
+  color: #a0cfff;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
 }
 
 nav {
   background: #1a1a2e;
-  padding: 0.8em 1.5em;
+  padding: 14px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5em;
+  gap: 2em;
   justify-content: center;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 4px;
 }
 
 nav a:hover {
+  background: #0f3460;
   color: #a0cfff;
 }
 
 header {
-  background: #16213e;
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
   color: #fff;
   text-align: center;
-  padding: 3em 1.5em;
+  padding: 80px 20px;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5em;
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
 }
 
 header p {
-  margin-bottom: 1.5em;
-  color: #ccc;
+  font-size: 1.1rem;
+  color: #a0cfff;
+  margin-bottom: 30px;
 }
 
 header a {
-  background: #0f3460;
+  background: #e94560;
   color: #fff;
-  padding: 0.7em 1.8em;
-  border-radius: 4px;
-  border: 2px solid #a0cfff;
+  padding: 12px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 header a:hover {
-  background: #a0cfff;
-  color: #1a1a2e;
+  background: #fff;
+  color: #e94560;
 }
 
 div {
-  max-width: 800px;
-  margin: 2em auto;
-  padding: 0 1.5em;
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px 35px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5em;
-  color: #1a1a2e;
+  font-size: 1.4rem;
+  color: #0f3460;
+  margin-bottom: 14px;
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 12px;
+  color: #444;
 }
 
 ol, ul {
-  padding-left: 1.5em;
+  padding-left: 20px;
 }
 
 li {
-  margin-bottom: 0.6em;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 a {
   color: #0f3460;
+  text-decoration: none;
 }
 
 a:hover {
   color: #e94560;
+  text-decoration: underline;
 }
 
 hr {
-  max-width: 800px;
-  margin: 1.5em auto;
-  border: none;
-  border-top: 1px solid #ddd;
+  display: none;
 }
 
 form {
-  width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border: 1px solid #ccc;
+  width: 480px;
+  margin: 40px auto;
+  padding: 35px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
 
 label {
   font-weight: bold;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 5px;
 }
 
-input, select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
   width: 100%;
-  padding: 8px;
-  margin-top: 4px;
+  padding: 10px 12px;
   border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0f3460;
+  background: #fff;
 }
 
 input[type="submit"] {
+  margin-top: 20px;
   width: auto;
-  background: blue;
+  background: #e94560;
   color: white;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
 }
 
+input[type="submit"]:hover {
+  background: #0f3460;
+}
+
 input[type="reset"] {
+  margin-top: 20px;
+  margin-left: 10px;
   width: auto;
-  background: lightgray;
+  background: #eee;
+  color: #555;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
   cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background: #ddd;
 }
 
 footer {
   background: #1a1a2e;
   color: #aaa;
   text-align: center;
-  padding: 1.5em;
-  margin-top: 3em;
-  font-size: 0.9rem;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.85rem;
 }
 
 footer a {
