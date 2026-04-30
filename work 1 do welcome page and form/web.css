@@ -1,0 +1,156 @@
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f9f9f9;
+  line-height: 1.6;
+}
+
+nav {
+  background: #1a1a2e;
+  padding: 0.8em 1.5em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #a0cfff;
+}
+
+header {
+  background: #16213e;
+  color: #fff;
+  text-align: center;
+  padding: 3em 1.5em;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+header p {
+  margin-bottom: 1.5em;
+  color: #ccc;
+}
+
+header a {
+  background: #0f3460;
+  color: #fff;
+  padding: 0.7em 1.8em;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 2px solid #a0cfff;
+}
+
+header a:hover {
+  background: #a0cfff;
+  color: #1a1a2e;
+}
+
+section {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1.5em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  color: #1a1a2e;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ol, ul {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+a {
+  color: #0f3460;
+}
+
+a:hover {
+  color: #e94560;
+}
+
+hr {
+  max-width: 800px;
+  margin: 1.5em auto;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+form {
+  max-width: 500px;
+  margin: 1.5em auto;
+  padding: 0 1.5em;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.6em 1.5em;
+  margin-right: 0.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background: #0f3460;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background: #16213e;
+}
+
+input[type="reset"] {
+  background: #eee;
+  color: #333;
+}
+
+footer {
+  background: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 3em;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #a0cfff;
+}
