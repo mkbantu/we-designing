@@ -1,0 +1,15 @@
+<!----formlabel------->
+.flabel{
+    margin-left: 5px;
+    color: black;
+    width: 2cm;
+    background-color: aqua;
+    margin-top: 2cm;
+}
+body{
+    background-color: rgba(159, 165, 163, 0.432);
+}
+.forms{
+    display: block;
+    margin-left: 5cm;
+}
