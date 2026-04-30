@@ -65,8 +65,11 @@ nav a:hover {
 header {
   background: linear-gradient(135deg, #1a1a2e, #0f3460);
   color: #fff;
-  text-align: center;
   padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 header h1 {
@@ -142,32 +145,50 @@ hr {
 form {
   width: 480px;
   margin: 40px auto;
-  padding: 35px 40px;
+  padding: 0;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 16px rgba(233,69,96,0.15);
+  border-top: 5px solid #0f3460;
+  overflow: hidden;
+}
+
+form h1 {
+  background: #e94560;
+  color: #fff;
+  margin: 0;
+  padding: 20px 40px;
+  font-size: 1.4rem;
+}
+
+form p {
+  padding: 0 40px;
+  margin-top: 16px;
+  color: #666;
 }
 
 label {
   font-weight: bold;
   font-size: 0.9rem;
-  color: #1a1a2e;
+  color: #e94560;
   display: block;
   margin-top: 16px;
   margin-bottom: 5px;
+  padding: 0 40px;
 }
 
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-  width: 100%;
+  width: calc(100% - 80px);
+  margin: 0 40px;
   padding: 10px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #f5a0ae;
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
-  background: #f9f9f9;
+  background: #fff5f6;
 }
 
 input[type="text"]:focus,
@@ -175,12 +196,12 @@ input[type="email"]:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #0f3460;
+  border-color: #e94560;
   background: #fff;
 }
 
 input[type="submit"] {
-  margin-top: 20px;
+  margin: 24px 40px 30px;
   width: auto;
   background: #e94560;
   color: white;
@@ -193,7 +214,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background: #0f3460;
+  background: #c0304a;
 }
 
 input[type="reset"] {
