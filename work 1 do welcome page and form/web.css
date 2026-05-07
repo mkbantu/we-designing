@@ -6,36 +6,14 @@ body {
   line-height: 1.7;
 }
 
-#reg {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: #0f3460;
-  padding: 6px 30px;
-  max-width: 100%;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  display: block;
-}
-
-#reg ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  justify-content: center;
-}
-
-#reg li {
-  color: #a0cfff;
-  font-size: 0.82rem;
-  letter-spacing: 0.03em;
-}
 
 nav {
   background: #1a1a2e;
   padding: 14px 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
@@ -70,6 +48,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  height: 2 cm;
 }
 
 header h1 {
