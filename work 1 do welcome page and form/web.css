@@ -16,6 +16,7 @@ body {
   margin: 0;
   border-radius: 0;
   box-shadow: none;
+  display: block;
 }
 
 #reg ul {
@@ -106,21 +107,40 @@ div {
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #main-content {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 24px;
   max-width: 1100px;
   background: none;
   box-shadow: none;
   padding: 0 20px;
+  align-items: stretch;
 }
 
 #main-content > div {
   flex: 1;
   margin: 40px 0;
+  align-items: flex-start;
+  text-align: left;
+}
+
+#main-content > div h2,
+#main-content > div > p {
+  align-self: center;
+  text-align: center;
+}
+
+#main-content > div ol,
+#main-content > div ul {
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
 }
 
 h2 {
@@ -170,12 +190,47 @@ hr {
 }
 
 form {
-  width: 480px;
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#subscribe {
+  max-width: 500px;
   margin: 40px auto;
-  padding: 20px 40px 30px;
+  padding: 36px 40px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#subscribe form {
+  width: 100%;
+  text-align: left;
+}
+
+#sub-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: none;
+  border-radius: 0;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 0;
 }
 
 label {
