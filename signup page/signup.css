@@ -1,0 +1,17 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+div {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    height: 400px;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
