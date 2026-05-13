@@ -291,3 +291,74 @@ footer {
 footer a {
   color: #a0cfff;
 }
+
+.intro-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 24px auto 0;
+  border-radius: 10px;
+  background: #000;
+  max-width: 700px;
+}
+
+.intro-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.path-videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.path-video-item {
+  flex: 1 1 260px;
+}
+
+.path-video-item h3 {
+  font-size: 1rem;
+  color: #0f3460;
+  margin-bottom: 8px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.form-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0 28px;
+  border-radius: 10px;
+  background: #000;
+}
+
+.form-video iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+  border-radius: 10px;
+}

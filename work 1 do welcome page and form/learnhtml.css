@@ -25,6 +25,28 @@ main div article {
   background: #fff;
 }
 
+main div article .media-row {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+main div article .media-row .video-wrapper {
+  flex: 1 1 0 !important;
+  height: 260px !important;
+  padding-bottom: 0 !important;
+  position: relative !important;
+  margin: 0 !important;
+}
+
+main div article .media-row .codepen-wrapper {
+  flex: 1 1 0 !important;
+  height: 260px !important;
+  margin: 0 !important;
+}
+
 main div article:last-child {
   border-bottom: none;
 }
@@ -103,7 +125,7 @@ main div article th {
 }
 
 main section {
-  width: 25%;
+  width: 15%;
   flex: none;
   height: 100vh;
   padding: 10px 16px;
@@ -163,4 +185,17 @@ main section a.overview_header {
   height: 100%;
   border: none;
   border-radius: 8px;
+}
+
+.codepen-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.codepen-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
 }
